@@ -101,9 +101,9 @@ Mage is an orchestration tool used for managing and scheduling data pipelines.
 
 5. **Build Docker Images**: Build the Docker images for the project by navigating to the relevant directories and running `docker build` commands or you can build the image inside your IDE.
 
-6. **Start Apache Airflow**: Start Mage by doing `docker-compose up`.
+6. **Start Mage**: Start Mage by doing `docker-compose up`.
 
-7.  **Deploy the Data Pipeline**: Run the dags located inside the dags folder. This will ingest the data to the Google Cloud Storage, and from there to BigQuery.
+7.  **Deploy the Data Pipeline**: Run the exporters, loaders and transofmers located inside the dags folder. This will ingest the data to the Google Cloud Storage, and from there to BigQuery.
 
     Make sure to run the pipeline as follows:
 
