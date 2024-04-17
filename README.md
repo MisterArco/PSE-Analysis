@@ -118,3 +118,8 @@ Mage is an orchestration tool used for managing and scheduling data pipelines.
 ## Errors
 
 If you encountered any errors, please email me at jpbasilio26@gmail.com.
+
+TO DO:
+Make IDs for each rows for better queries. Make it surrogate key DBT.
+Convert data types to appropriate formats using cast().
+
