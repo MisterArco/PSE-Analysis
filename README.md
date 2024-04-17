@@ -109,16 +109,12 @@ Apache Airflow is an orchestration tool used for managing and scheduling data pi
 
     ![](resources/kaggle_to_gcs.png) ![](resources/gcs_to_bigquery.png)
   
-    
-
-     
-
-9. **Run dbt Models**: Run dbt models to transform and model data inside Google Bigquery. Navigate to the `dbt` directory and run the appropriate dbt commands.
+8. **Run dbt Models**: Run dbt models to transform and model data inside Google Bigquery. Navigate to the `dbt` directory and run the appropriate dbt commands.
    
-10. **Monitor and Manage the Data Pipeline**: Use Apache Airflow to monitor and manage the data pipeline tasks and workflows.
+9. **Monitor and Manage the Data Pipeline**: Use Apache Airflow to monitor and manage the data pipeline tasks and workflows.
 
-### Findings/Visualizations
+## Findings/Visualizations
 
-### Errors
+## Errors
 
 If you encountered any errors, please email me at jpbasilio26@gmail.com.
