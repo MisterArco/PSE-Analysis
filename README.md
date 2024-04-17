@@ -4,6 +4,10 @@
 
 The Philippine Stock Exchange (PSE) is a vital component of the country's financial landscape, offering investors a platform to trade equities, bonds, and other securities. This project aims to conduct comprehensive analytics on PSE data to derive insights, trends, and patterns that can inform investment strategies, risk management decisions, and market behavior understanding.
 
+### Architecture
+
+![](resources/Architecture.png)
+
 This project will design and implement an ETL (Extract, Transform, Load) pipeline using a suite of modern data engineering technologies. The pipeline will automate the extraction of data from various sources, transform it into a usable format, and load it into a cloud-based data warehouse for analysis. By leveraging these technologies, this aims to streamline data processing workflows, ensure data integrity, and enable efficient analytics and reporting.
 
 ## Dataset
@@ -12,8 +16,8 @@ The dataset is sourced from Kaggle, focusing on OHLCV (Open, High, Low, Close, V
 
 ## Technologies Used
 
-- **Apache Airflow:**
-  - Orchestration tool for managing and scheduling data pipelines.
+- **Mage:**
+  - Open-source data pipeline tool for transforming and integrating data.
 
 - **Docker:**
   - Containerization platform for packaging applications and dependencies.
@@ -74,7 +78,7 @@ Apache Airflow is an orchestration tool used for managing and scheduling data pi
 
 #### Installation Instructions:
 
-- Install Apache Airflow by following the instructions in the [official documentation](https://airflow.apache.org/docs/apache-airflow/stable/start/local.html) or from the [DE ZOOMCAMP](https://github.com/DataTalksClub/data-engineering-zoomcamp).
+- Install Mage by following the instructions in the [official documentation](https://docs.mage.ai/introduction/overview) or from the [Mage Zoomcamp](https://github.com/mage-ai/compose-quickstart).
 - Choose the installation method that best suits your environment (e.g., using pip, Docker, or using a pre-packaged installation).
 
 ### After installing all the prerequisites, follow these steps.
@@ -97,14 +101,20 @@ Apache Airflow is an orchestration tool used for managing and scheduling data pi
 
 5. **Build Docker Images**: Build the Docker images for the project by navigating to the relevant directories and running `docker build` commands or you can build the image inside your IDE.
 
-6. **Start Apache Airflow**: Start Apache Airflow by doing `docker-compose up`.
+6. **Start Apache Airflow**: Start Mage by doing `docker-compose up`.
 
 7.  **Deploy the Data Pipeline**: Run the dags located inside the dags folder. This will ingest the data to the Google Cloud Storage, and from there to BigQuery.
 
+    Make sure to run the pipeline as follows:
+
+    ![](resources/kaggle_to_gcs.png) ![](resources/gcs_to_bigquery.png)
+  
 8. **Run dbt Models**: Run dbt models to transform and model data inside Google Bigquery. Navigate to the `dbt` directory and run the appropriate dbt commands.
    
 9. **Monitor and Manage the Data Pipeline**: Use Apache Airflow to monitor and manage the data pipeline tasks and workflows.
 
-### Errors
+## Findings/Visualizations
+
+## Errors
 
 If you encountered any errors, please email me at jpbasilio26@gmail.com.
