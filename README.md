@@ -72,9 +72,9 @@ dbt is an analytics engineering tool used for transforming and modeling data in 
 - Install dbt by following the instructions in the [official documentation](https://docs.getdbt.com/dbt-cli/installation) or from [DE ZOOMCAMP](https://github.com/DataTalksClub/data-engineering-zoomcamp).
 - Verify the installation by running `dbt --version` in your terminal.
 
-### 5. Apache Airflow
+### 5. Mage
 
-Apache Airflow is an orchestration tool used for managing and scheduling data pipelines.
+Mage is an orchestration tool used for managing and scheduling data pipelines.
 
 #### Installation Instructions:
 
