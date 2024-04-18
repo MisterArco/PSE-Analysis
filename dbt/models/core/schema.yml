@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: monthly_performance
+    description: >
+      This model aggregates monthly performance metrics for stocks traded on the Philippine Stock Exchange (PSE). 
+      It calculates average closing prices, maximum high prices, minimum low prices, average trading volumes,
+      average price changes, and average price change percentages for each symbol and month. 
+    columns:
+      - name: symbol
+        description: >
+          The symbol representing the stock.
+      - name: month
+        description: >
+          The month for which the performance metrics are calculated.
+      - name: avg_closing_price
+        description: >
+          The average closing price of the stock for the specified month.
+      - name: max_high_price
+        description: >
+          The maximum high price of the stock during the specified month.
+      - name: min_low_price
+        description: >
+          The minimum low price of the stock during the specified month.
+      - name: avg_trading_volume
+        description: >
+          The average trading volume of the stock for the specified month.
+      - name: avg_price_change
+        description: >
+          The average price change of the stock for the specified month.
+      - name: avg_price_change_percent
+        description: >
+          The average percentage change in price of the stock for the specified month.
+
+  - name: yearly_performance
+    description: >
+      This model aggregates monthly performance metrics for stocks traded on the Philippine Stock Exchange (PSE). 
+      It calculates average closing prices, maximum high prices, minimum low prices, average trading volumes,
+      average price changes, and average price change percentages for each symbol and year. 
+    columns:
+      - name: symbol
+        description: >
+          The symbol representing the stock.
+      - name: year
+        description: >
+          The year for which the performance metrics are calculated.
+      - name: avg_closing_price
+        description: >
+          The average closing price of the stock for the specified year.
+      - name: max_high_price
+        description: >
+          The maximum high price of the stock during the specified year.
+      - name: min_low_price
+        description: >
+          The minimum low price of the stock during the specified year.
+      - name: avg_trading_volume
+        description: >
+          The average trading volume of the stock for the specified year.
+      - name: avg_price_change
+        description: >
+          The average price change of the stock for the specified year.
+      - name: avg_price_change_percent
+        description: >
+          The average percentage change in price of the stock for the specified year.
