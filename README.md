@@ -14,6 +14,28 @@ This project will design and implement an ETL (Extract, Transform, Load) pipelin
 
 The dataset is sourced from Kaggle, focusing on OHLCV (Open, High, Low, Close, Volume) stock data from the Philippines Stock Exchange. This dataset provides historical market information, including price movements and trading volumes for various stocks listed on the exchange. With this data, we aim to analyze trends and patterns to better understand the dynamics of the Philippine stock market
 
+### Columns
+
+| Field  | Description                        |
+|--------|------------------------------------|
+| c      | Closing price                      |
+| h      | Highest price within the day       |
+| l      | Lowest price within the day        |
+| o      | Opening price                      |
+| t      | Time of the last trade             |
+| v      | Volume                             |
+| y      | Dividend yield                     |
+| m      | month                              |
+| d      | day                                |
+| w      | week                               |
+| wd     | day of the week                    |
+| last   | Last trade price                   |
+| change | Change in price                    |
+| pchange| Percentage change in price         |
+| symbol | Stock symbol                       |
+
+The column names listed will undergo transformation using tools like Mage and DBT Cloud. This process involves assigning appropriate data types to ensure data consistency and accuracy. Additionally, some columns may be removed during cleanup to enhance data cleanliness, removing redundancies or irrelevant information. These steps aim to optimize the dataset for further analysis and visualization, facilitating meaningful insights and decision-making.
+
 ## Technologies Used
 
 - **Mage:**
@@ -109,17 +131,24 @@ Mage is an orchestration tool used for managing and scheduling data pipelines.
 
     ![](resources/kaggle_to_gcs.png) ![](resources/gcs_to_bigquery.png)
   
-8. **Run dbt Models**: Run dbt models to transform and model data inside Google Bigquery. Navigate to the `dbt` directory and run the appropriate dbt commands.
+8. **Run dbt Models**: Run dbt models to transform and model data inside Google Bigquery. Navigate to the `dbt` directory and run the appropriate dbt commands. Run the `dbt build` to run the structure below.
+  
+   ![](resources/dbt_structure.png)
+
+   After doing `dbt build` your Data Warehouse should look like this.
+
+   ![](resources/bq.png)
    
-9. **Monitor and Manage the Data Pipeline**: Use Apache Airflow to monitor and manage the data pipeline tasks and workflows.
+9. **Monitor and Manage the Data Pipeline**: Use Mage and DBT Cloud to monitor and manage the data pipeline tasks and workflows.
 
 ## Findings/Visualizations
+
+The analysis of Philippine Stock Exchange data spanning 1988 to 2015
+
+![](resources/visualization.png)
+
+The Philippine Stock Exchange (PSE) experienced significant growth from 1988 to 2015 due to factors like economic liberalization, infrastructure modernization, and sectoral expansion. Philodrill Corporation (OV) notably showed consistently high average price changes, indicating strong trend potential. *The data is available for further visualizations, particularly for identifying trends and patterns.*
 
 ## Errors
 
 If you encountered any errors, please email me at jpbasilio26@gmail.com.
-
-TO DO:
-Make IDs for each rows for better queries. Make it surrogate key DBT.
-Convert data types to appropriate formats using cast().
-
