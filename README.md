@@ -147,7 +147,9 @@ The analysis of Philippine Stock Exchange data spanning 1988 to 2015
 
 ![](resources/visualization.png)
 
-The Philippine Stock Exchange (PSE) experienced significant growth from 1988 to 2015 due to factors like economic liberalization, infrastructure modernization, and sectoral expansion. Philodrill Corporation (OV) notably showed consistently high average price changes, indicating strong trend potential. *The data is available for further visualizations, particularly for identifying trends and patterns.*
+The Philippine Stock Exchange (PSE) experienced significant growth from 1988 to 2015 due to factors like economic liberalization, infrastructure modernization, and sectoral expansion. Philodrill Corporation (OV) notably showed consistently high average price changes, indicating strong trend potential. 
+
+### *The data is available for further visualizations, particularly for identifying trends and patterns.*
 
 ## Errors
 
