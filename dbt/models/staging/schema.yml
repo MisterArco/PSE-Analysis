@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: pse-analysis-420121 
+    schema: pse_data
+
+    tables:
+      - name: pse_analysis
+
+
