@@ -8,7 +8,7 @@ WITH pse_monthly AS (
     SELECT
         -- Identifiers
         symbol,
-        EXTRACT(month FROM date) AS year,
+        EXTRACT(month FROM date) AS month,
         
         -- Prices
         closing_price,
@@ -28,7 +28,7 @@ WITH pse_monthly AS (
 
 SELECT
     symbol,
-    year,
+    month,
     AVG(closing_price) AS avg_closing_price,
     MAX(high_price) AS max_high_price,
     MIN(low_price) AS min_low_price,
@@ -38,7 +38,7 @@ SELECT
 FROM pse_monthly
 GROUP BY
     symbol,
-    year
+    month
 ORDER BY
     symbol,
-    year
+    month

@@ -36,5 +36,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  pse_data:
-   
+  models:
+    staging:
+      stg_pse_data:
+        materialized: view
+  core:
+      monthly_performance:
+        materialized: table
+      yearly_performance:
+        materialized: table  
+
