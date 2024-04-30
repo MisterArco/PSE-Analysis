@@ -8,7 +8,7 @@ The Philippine Stock Exchange (PSE) is a vital component of the country's financ
 
 ![](resources/Architecture.png)
 
-This project will design and implement an ETL (Extract, Transform, Load) pipeline using a suite of modern data engineering technologies. The pipeline will automate the extraction of data from various sources, transform it into a usable format, and load it into a cloud-based data warehouse for analysis. By leveraging these technologies, this aims to streamline data processing workflows, ensure data integrity, and enable efficient analytics and reporting.
+This project will design and implement an ETL (Extract, Transform, Load) pipeline using a suite of modern data engineering technologies. The pipeline will automate the extraction of data from various sources, transform it into a usable format, load it into a cloud-based data warehouse and changes will be made through batch processing using dbt. By leveraging these technologies, this aims to streamline data processing workflows, ensure data integrity, and enable efficient analytics and reporting.
 
 ## Dataset
 
